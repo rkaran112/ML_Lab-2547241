@@ -36,14 +36,14 @@ Python, run in Google Colab / Jupyter notebooks. Libraries used (per the noteboo
 
 ## Setup / running
 
-There is no `requirements.txt` or environment file in this repo, so no verified install command can be given. To run the notebooks as-is:
+A `requirements.txt` listing the libraries imported across the notebooks is included. To run the notebooks as-is:
 
-1. Open a notebook directly in Google Colab via the badge link at the top of each `.ipynb` file, or open it locally with Jupyter (`pip install jupyter pandas numpy matplotlib seaborn scikit-learn`, then `jupyter notebook`).
+1. Open a notebook directly in Google Colab via the badge link at the top of each `.ipynb` file, or open it locally with Jupyter (`pip install -r requirements.txt`, then `jupyter notebook`).
 2. Lab 1&2 and Lab 3 read input data from hardcoded Colab paths (`/content/city_day.csv`, `/content/crop_production.csv`, `/content/student_survey.qcsv`). **These CSV files are not included in this repo** — they must be uploaded to the Colab `/content/` directory (or the paths edited) before the notebooks will run. Lab 4 loads its data directly from `sklearn.datasets.load_breast_cancer()` and needs no external file.
 
 ## Status
 
 Work in progress / coursework snapshot:
 - All three notebooks contain complete, executed code with saved outputs — no stub functions, `TODO`/`FIXME` markers, or obviously incomplete cells were found.
-- However, the repo is **not runnable standalone**: two of the three notebooks depend on external CSV files that aren't checked in, and there's no `requirements.txt`/environment spec, so reproducing the results elsewhere than the original Colab session requires supplying the missing data files yourself.
+- However, the repo is **not runnable standalone**: two of the three notebooks depend on external CSV files that aren't checked in, so reproducing the results elsewhere than the original Colab session requires supplying the missing data files yourself.
 - This is a lab-assignment repo (individual experiments with write-ups), not a packaged/deployable project — there's no shared library code, CLI, or app entry point.
