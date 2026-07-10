@@ -1,0 +1,9 @@
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated model weights (produced by running Lab 3 locally)
+*.pkl
+
+# Byte-compiled / cache files
+__pycache__/
+*.pyc
