@@ -44,6 +44,7 @@ A `requirements.txt` listing the libraries imported across the notebooks is incl
 ## Status
 
 Work in progress / coursework snapshot:
-- All three notebooks contain complete, executed code with saved outputs — no stub functions, `TODO`/`FIXME` markers, or obviously incomplete cells were found.
-- However, the repo is **not runnable standalone**: two of the three notebooks depend on external CSV files that aren't checked in, so reproducing the results elsewhere than the original Colab session requires supplying the missing data files yourself.
+- All three notebooks contain complete code — no stub functions or `TODO`/`FIXME` markers were found. Lab 3 and Lab 4 are fully executed with saved outputs throughout.
+- Lab 1&2 is mostly executed, but the Task 3 (state-name harmonization) and Task 8 (state-level merge/correlation heatmap) cells currently show no saved output: they haven't been re-run since the Jorapokhar city→state mapping fix, which changed which states are included in the merge. The Task 8 write-up's correlation numbers predate that fix and are flagged inline as indicative only until the notebook is re-run end-to-end.
+- The repo is also **not runnable standalone**: two of the three notebooks depend on external CSV files that aren't checked in, so reproducing the results elsewhere than the original Colab session requires supplying the missing data files yourself.
 - This is a lab-assignment repo (individual experiments with write-ups), not a packaged/deployable project — there's no shared library code, CLI, or app entry point.
